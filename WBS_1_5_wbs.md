@@ -1,5 +1,5 @@
 ```mermaid
-graph LR;
+graph TD;
 subgraph "第一階層(生姜焼き定食)"
     cook_teisyoku["生姜焼き定食を作る"]
 end
@@ -44,9 +44,9 @@ subgraph "第三階層(それぞれの調理工程)"
 end
 
 subgraph "第四階層(材料や調味料)"
-    1_zyunbi_syougayaki["生姜焼きの材料(豚肉、生姜焼きのたれを準備する)"]
+    1_zyunbi_syougayaki["生姜焼きの材料(油、豚肉、生姜焼きのたれを準備する)"]
     2_zyunbi_okome["お米、水を準備する"]
-    3_zyunbi_soup[味噌汁（味噌、だし、豆腐、わかめ）の材料を準備する]
+    3_zyunbi_soup[味噌汁（水、味噌、だし、豆腐、わかめ）の材料を準備する]
     4_zyunbi_sarada["サラダ（レタス、キャベツ、ドレッシング）・納豆を準備する"]
     5_zyunbi_zeri["デザート(ゼリー)を準備する"]
 
@@ -88,8 +88,23 @@ cook_dezert --> 1_zeri;
 
 buy_syokuzai --> 1_buy;
 
-1_syougayaki --> 1_zyunbi_syougayaki
-2_syougayaki --> 1_zyunbi_syougayaki
-3_syougayaki --> 1_zyunbi_syougayaki
+1_syougayaki --> 1_zyunbi_syougayaki;
+2_syougayaki --> 1_zyunbi_syougayaki;
+3_syougayaki --> 1_zyunbi_syougayaki;
 
+
+1_okome --> 2_zyunbi_okome;
+3_okome --> 2_zyunbi_okome;
+
+1_soup --> 3_zyunbi_soup;
+3_soup --> 3_zyunbi_soup;
+4_soup --> 3_zyunbi_soup;
+5_soup --> 3_zyunbi_soup;
+6_soup --> 3_zyunbi_soup;
+
+1_sarada --> 4_zyunbi_sarada;
+5_sarada --> 4_zyunbi_sarada;
+6_sarada --> 4_zyunbi_sarada;
+
+1_zeri --> 5_zyunbi_zeri;
 ``` 
