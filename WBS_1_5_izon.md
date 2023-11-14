@@ -36,16 +36,16 @@ flowchart LR
     作業時間5分"]
     miso4["鍋に出汁を入れる
     作業時間5分"]
-    miso5["鍋に豆腐を入れる
+    miso5["鍋にわかめを入れる
     作業時間5分"]
-    miso6["鍋にわかめを入れる
+    miso6["鍋に豆腐を入れる
     作業時間5分"]
     miso7["味噌汁を盛り付ける
     作業時間5分"]
     super-->miso1
     miso1-->miso2
     miso1-->miso3
-    miso3-->miso5
+    miso3-->miso6
     miso2-->miso4
     miso2-->miso5
     miso2-->miso6
