@@ -47,6 +47,7 @@ flowchart LR
     miso1-->miso3
     miso3-->miso5
     miso2-->miso4
+    miso2-->miso5
     miso2-->miso6
     miso4-->miso7
     miso5-->miso7
