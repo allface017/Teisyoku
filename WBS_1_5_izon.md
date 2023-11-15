@@ -65,14 +65,14 @@ flowchart LR
     sarada6["納豆を盛り付ける
     作業時間5分"]
     super-->sarada1
-    super-->sarada6
     sarada1-->sarada2
     sarada1-->sarada3
     sarada2-->sarada4
     sarada3-->sarada4
     sarada4-->sarada5
+    sarada5-->sarada6
     zeri["ゼリーを皿に盛る
     作業時間5分"]
-    super-->zeri
+    miso7-->zeri
     
 ```
